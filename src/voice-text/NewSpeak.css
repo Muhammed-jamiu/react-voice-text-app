@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-400;
+}
+
+.action-btn {
+  @apply border-2 w-[150px] rounded-lg;
+}
+.pic-icon {
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transition: all 2300ms;
+}
+
+.pic-icon:hover {
+  border-top-right-radius: 60%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  cursor: pointer;
+  fill-opacity: initial;
+  transition: all 2400ms;
+  animation-delay: 400ms;
+  height: 180px;
+  width: 180px;
+}
